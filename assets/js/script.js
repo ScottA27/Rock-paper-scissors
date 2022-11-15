@@ -5,7 +5,7 @@ const buttons = document.getElementsByClassName('control');
 const totalWins = document.getElementById('wins');
 const totalLosses = document.getElementById('losses');
 const choices = ["rock", "paper", "scissors"];
-const result = document.getElementsByClassName('result')
+const resultText = document.getElementsByClassName('result-text');
 
 /**
  * Add event listeners to buttons
@@ -22,11 +22,11 @@ for (let button of buttons) {
  * and its given parameter
  */
 function playGame(playerChoice) {
-    let computerChoice = Math.floor(Math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * choices.length);
 
     let result = checkWinner(choices[playerChoice], choices[computerChoice]);
 
-    updateScores(result)
+    updateScores(result);
 }
 
 /**
@@ -34,7 +34,39 @@ function playGame(playerChoice) {
  * from the player and computer, as parameters, to then
  * compare them
  */
-function checkWinner(choices)
+function checkWinner(choices, playerChoice, computerChoice) {
+    // Tie
+    if (playerChoice === computerChoice) {
+        return resultText.innerHTML = "IT'S A TIE!";
+    }
+
+    // Rock 
+    if (playerChoice === "rock") {
+        if (computerChoice === "scissors") {
+            return resultText.innerHTML = "YOU WIN!";
+        } else {
+            return resultText.innerHTML = "YOU LOSE!";
+        }
+    }
+
+    // Scissors
+    if (playerChoice === "scissors") {
+        if (computerChoice === "paper") {
+            return resultText.innerHTML = "YOU WIN!";
+        } else {
+            return resultText.innerHTML = "YOU LOSE!";
+        }
+    }
+
+    // Paper 
+    if (playerChoice === "paper") {
+        if (computerChoice === "rock") {
+            return resultText.innerHTML = "YOU WIN!";
+        } else {
+            return resultText.innerHTML = "YOU LOSE!";
+        }
+    }
+}
 
 
 /**
