@@ -37,43 +37,38 @@ function playGame(playerChoice) {
  * compare them
  */
 function checkWinner() {
-    // Tie
-    if (playerChoice == computerChoice) {
-        
+    if (playerChoice == '0' && computerChoice == '2') {
+        resultText.innerHTML = "YOU WIN!";
+        playerScore();
     }
-
-    // Rock 
-    if (playerChoice == "rock") {
-        if (computerChoice == "scissors") {
-            return  "YOU WIN!";
-        } else {
-            return  "YOU LOSE!";
-        }
+    else if (playerChoice == '1' && computerChoice == '0') {
+        resultText.innerHTML = "YOU WIN!";
+        playerScore();
     }
-
-    // Scissors
-    if (playerChoice == "scissors") {
-        if (computerChoice == "paper") {
-            return  "YOU WIN!";
-        } else {
-            return  "YOU LOSE!";
-        }
+    else if (playerChoice == '2' && computerChoice == '2') {
+        resultText.innerHTML == "YOU WIN!";
+        playerScore();
     }
-
-    // Paper 
-    if (playerChoice == "paper") {
-        if (computerChoice == "rock") {
-            return  "YOU WIN!";
-        } else {
-            return  "YOU LOSE!";
-        }
+    else if (playerChoice == '0' && computerChoice == '1') {
+        resultText.innerHTML == "YOU LOSE!";
+        computerScore();
+    }
+    else if (playerChoice == '1' && computerChoice == '2') {
+        resultText.innerHTML == "YOU LOSE!";
+        computerScore();
+    }
+    else if (playerChoice == '2' && computerChoice == '0') {
+        resultText.innerHTML == "YOU LOSE!";
+        computerScore();
     }
 }
 
 
 /**
  * The playerScore function. If the player wins the 
- * game a point will be added to their tally
+ * game a point will be added to their tally. This 
+ * is based on Code Insitute's Love Maths increment 
+ * score function
  */
 function playerScore() {
 
@@ -81,7 +76,9 @@ function playerScore() {
 
 /**
  * The computerScore function. If the computer wins
- * the game a point will be added to their tally
+ * the game a point will be added to their tally. This 
+ * is based on Code Insitute's Love Maths increment 
+ * score function
  */
 function computerScore() {
 
