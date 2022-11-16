@@ -1,18 +1,21 @@
 /**
  * Declare constants for DOM elements and choices
  */
-const buttons = document.getElementsByClassName('control');
+const buttons = document.querySelectorAll('data-choice');
 const totalWins = document.getElementById('wins');
 const totalLosses = document.getElementById('losses');
 const choices = ["rock", "paper", "scissors"];
-const resultText = document.getElementsByClassName('result-text');
+const resultText = document.getElementById('result-text');
+
+let playerChoice;
+let computerChoice;
 
 /**
  * Add event listeners to buttons
  */
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
+        playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
 }
@@ -22,11 +25,10 @@ for (let button of buttons) {
  * and its given parameter
  */
 function playGame(playerChoice) {
-    let computerChoice = Math.floor(Math.random() * choices.length);
+    computerChoice = Math.floor(Math.random() * 3);
+    
+    checkWinner();
 
-    let result = checkWinner(choices[playerChoice], choices[computerChoice]);
-
-    updateScores(result);
 }
 
 /**
@@ -34,43 +36,53 @@ function playGame(playerChoice) {
  * from the player and computer, as parameters, to then
  * compare them
  */
-function checkWinner(choices, playerChoice, computerChoice) {
+function checkWinner() {
     // Tie
-    if (playerChoice === computerChoice) {
-        return resultText.innerHTML = "IT'S A TIE!";
+    if (playerChoice == computerChoice) {
+        
     }
 
     // Rock 
-    if (playerChoice === "rock") {
-        if (computerChoice === "scissors") {
-            return resultText.innerHTML = "YOU WIN!";
+    if (playerChoice == "rock") {
+        if (computerChoice == "scissors") {
+            return  "YOU WIN!";
         } else {
-            return resultText.innerHTML = "YOU LOSE!";
+            return  "YOU LOSE!";
         }
     }
 
     // Scissors
-    if (playerChoice === "scissors") {
-        if (computerChoice === "paper") {
-            return resultText.innerHTML = "YOU WIN!";
+    if (playerChoice == "scissors") {
+        if (computerChoice == "paper") {
+            return  "YOU WIN!";
         } else {
-            return resultText.innerHTML = "YOU LOSE!";
+            return  "YOU LOSE!";
         }
     }
 
     // Paper 
-    if (playerChoice === "paper") {
-        if (computerChoice === "rock") {
-            return resultText.innerHTML = "YOU WIN!";
+    if (playerChoice == "paper") {
+        if (computerChoice == "rock") {
+            return  "YOU WIN!";
         } else {
-            return resultText.innerHTML = "YOU LOSE!";
+            return  "YOU LOSE!";
         }
     }
 }
 
 
 /**
- * The update scores function. Takes whoever won the game
- * and adds a point to their score tally
+ * The playerScore function. If the player wins the 
+ * game a point will be added to their tally
  */
-function updateScores()
+function playerScore() {
+
+}
+
+/**
+ * The computerScore function. If the computer wins
+ * the game a point will be added to their tally
+ */
+function computerScore() {
+
+}
