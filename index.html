@@ -12,26 +12,30 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <h1 class="heading">Rock, Paper, Scissors</h1>
-    <div id="result-text"></div>
-    <section id="game-area">
-        <div class="player-options">
-            <button data-choice="rock" class="control">
-                <i class="fa-solid fa-hand-back-fist"></i>
-            </button>
-            <button data-choice="paper" class="control">
-                <i class="fa-solid fa-hand"></i>
-            </button>
-            <button data-choice="scissors" class="control">
-                <i class="fa-solid fa-hand-scissors"></i>
-            </button>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <section id="game-area">
+            <span id="result-text"></span>
+            <div class="player-options">
+                <button data-choice="0" class="control" id="rock">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </button>
+                <button data-choice="1" class="control" id="paper">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <button data-choice="2" class="control" id="scissors">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </button>
+            </div>
+            <div class="computer">Computers square</div>
+        </section>
+        <div id="score-area">
+            <p id="player-score">Player Score <span id="wins">0</span></p>
+            <p id="computer-score">Computer Score <span id="losses">0</span></p>
         </div>
-        <div class="computer">Computers square</div>
-    </section>
-    <div id="score-area">
-        <p id="player-score">Player Score <span id="wins">0</span></p>
-        <p id="computer-score">Computer Score <span id="losses">0</span></p>
-    </div>
-    <script src="assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </main>
 </body>
 </html>

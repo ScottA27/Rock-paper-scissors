@@ -1,22 +1,26 @@
 /**
  * Declare constants for DOM elements and choices
  */
-const buttons = document.querySelectorAll('data-choice');
+const buttons = document.getElementsByClassName('control');
 const totalWins = document.getElementById('wins');
 const totalLosses = document.getElementById('losses');
 const choices = ["rock", "paper", "scissors"];
-const resultText = document.getElementById('result-text');
+let resultText = document.getElementById("result-text");
 
 let playerChoice;
 let computerChoice;
 
 /**
- * Add event listeners to buttons
+ * The game area. This adds event listeners to 
+ * all buttons. It takes what the user has clicked
+ * and the computers randomly generated choice to use as 
+ * parameters in order to get a winner.
  */
 for (let button of buttons) {
     button.addEventListener("click", function () {
         playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
+        computerRandomGenerator();
+        checkWinner();
     });
 }
 
@@ -24,15 +28,13 @@ for (let button of buttons) {
  * The game area function. Takes the option from data-choice
  * and its given parameter
  */
-function playGame(playerChoice) {
+function computerRandomGenerator() {
     computerChoice = Math.floor(Math.random() * 3);
-    
-    checkWinner();
 
 }
 
 /**
- * Checks to see who has won, it takes both the strings
+ * Checks to see who has won, it takes both choices
  * from the player and computer, as parameters, to then
  * compare them
  */
@@ -61,6 +63,9 @@ function checkWinner() {
         resultText.innerHTML == "YOU LOSE!";
         computerScore();
     }
+    else {
+        resultText.innerHTML == "IT'S A TIE!"
+    }
 }
 
 
@@ -71,7 +76,8 @@ function checkWinner() {
  * score function
  */
 function playerScore() {
-
+    let oldScore = parseInt(document.getElementById('wins').innerText);
+    document.getElementById('wins').innerText = ++oldScore;
 }
 
 /**
@@ -81,5 +87,6 @@ function playerScore() {
  * score function
  */
 function computerScore() {
-
+    let oldScore = parseInt(document.getElementById('losses').innerText);
+    document.getElementById('losses').innerText = ++oldScore;
 }
