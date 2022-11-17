@@ -1,4 +1,23 @@
 body {
     background-color: aqua;
     font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+
+#game-area {
+    
+}
+
+#score-area {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player-score {
+    float: left;
+}
+
+#computer-score {
+    float: right;
 }
