@@ -5,7 +5,25 @@ body {
 }
 
 #game-area {
-    
+    width: 50%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+#player-square {
+    width: 20%;
+    height: 40vh;
+    background-color: red;
+    float: left;
+}
+
+#computer-square {
+    width: 20%;
+    height: 40vh;
+    background-color: red;
+    float: right;
 }
 
 #score-area {
