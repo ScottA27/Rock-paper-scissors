@@ -13,17 +13,24 @@ body {
 }
 
 #player-square {
-    width: 20%;
-    height: 40vh;
+    width: 40%;
+    height: 80%;
     background-color: red;
     float: left;
+    margin: 5%;
 }
 
 #computer-square {
-    width: 20%;
-    height: 40vh;
+    width: 40%;
+    height: 80%;
     background-color: red;
     float: right;
+    margin: 5%;
+}
+
+#result-text {
+    display: block;
+    font-size: 150%;
 }
 
 #score-area {
@@ -38,4 +45,9 @@ body {
 
 #computer-score {
     float: right;
+}
+
+.control {
+    height: 75px;
+    width: 75px;
 }
