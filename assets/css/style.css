@@ -5,7 +5,7 @@ body {
 }
 
 #game-area {
-    width: 70%;
+    width: 60%;
     height: 80%;
     margin: auto;
     position: absolute;
@@ -15,20 +15,13 @@ body {
     background-color: white;
 }
 
-.player-square {
+.image-container {
     width: 40%;
-    height: 50%;
-    background-color: red;
+    height: 40%;
+    background-color: magenta;
     float: left;
     margin: 5%;
-}
-
-.computer-square {
-    width: 40%;
-    height: 50%;
-    background-color: red;
-    float: right;
-    margin: 5%;
+    border-radius: 50%;
 }
 
 img {
@@ -59,7 +52,18 @@ img {
     font-size: 150%;
 }
 
+.player-options {
+}
+
 .control {
-    height: 75px;
-    width: 75px;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+#restart {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 1rem;
 }
