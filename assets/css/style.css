@@ -61,6 +61,21 @@ img {
     border-radius: 50%;
 }
 
+#rock {
+    background: url(/assets/images/rock-left.webp);
+    background-size: cover;
+}
+
+#paper {
+    background: url(/assets/images/paper-left.webp);
+    background-size: cover;
+}
+
+#scissors {
+    background: url(/assets/images/scissors-left_1.webp);
+    background-size: cover;
+}
+
 #restart {
     height: 5rem;
     width: 5rem;
