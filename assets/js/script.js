@@ -16,18 +16,18 @@ let computerChoice;
  */
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        playerChoice = this.getAttribute("data-choice");
+        playerChoice = +this.getAttribute("data-choice");
         computerRandomGenerator();
         checkWinner();
     });
 }
 
 /**
- * The game area function. Takes the option from data-choice
- * and its given parameter
+ * The random number generator. This takes a number between 0 and 2 
+ * to make a choice for the computer.
  */
 function computerRandomGenerator() {
-    computerChoice = Math.floor(Math.random() * 3);
+    computerChoice = Math.floor(Math.random() * choices.length);
 
 }
 
@@ -37,27 +37,27 @@ function computerRandomGenerator() {
  * compare them
  */
 function checkWinner() {
-    if (playerChoice == '0' && computerChoice == '2') {
+    if (playerChoice === 0 && computerChoice === 2) {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
-    else if (playerChoice == '1' && computerChoice == '0') {
+    else if (playerChoice === 1 && computerChoice === 0) {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
-    else if (playerChoice == '2' && computerChoice == '0') {
+    else if (playerChoice === 2 && computerChoice === 0) {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
-    else if (playerChoice == '0' && computerChoice == '1') {
+    else if (playerChoice === 0 && computerChoice === 1) {
         resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
-    else if (playerChoice == '1' && computerChoice == '2') {
+    else if (playerChoice === 1 && computerChoice === 2) {
         resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
-    else if (playerChoice == '2' && computerChoice == '0') {
+    else if (playerChoice === 2 && computerChoice === 0) {
         resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
