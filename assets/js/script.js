@@ -2,8 +2,6 @@
  * Declare constants for DOM elements and choices
  */
 const buttons = document.getElementsByClassName('control');
-const totalWins = document.getElementById('wins');
-const totalLosses = document.getElementById('losses');
 const choices = ["rock", "paper", "scissors"];
 let resultText = document.getElementById("result-text");
 
@@ -20,6 +18,7 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         playerChoice = this.getAttribute("data-choice");
         computerRandomGenerator();
+        checkWinner();
     });
 }
 
@@ -29,7 +28,6 @@ for (let button of buttons) {
  */
 function computerRandomGenerator() {
     computerChoice = Math.floor(Math.random() * 3);
-    checkWinner();
 
 }
 
@@ -52,19 +50,19 @@ function checkWinner() {
         playerScore();
     }
     else if (playerChoice == '0' && computerChoice == '1') {
-        resultText.innerHTML == "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
     else if (playerChoice == '1' && computerChoice == '2') {
-        resultText.innerHTML == "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
     else if (playerChoice == '2' && computerChoice == '0') {
-        resultText.innerHTML == "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE!";
         computerScore();
     }
     else {
-        resultText.innerHTML == "IT'S A TIE!"
+        resultText.innerHTML = "IT'S A TIE!";
     }
 }
 

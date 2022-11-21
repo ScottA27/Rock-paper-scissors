@@ -6,7 +6,7 @@ body {
 
 #game-area {
     width: 50%;
-    height: 60vh;
+    height: 80vh;
     margin-left: auto;
     margin-right: auto;
     background-color: gray;
@@ -16,7 +16,7 @@ body {
 
 #player-square {
     width: 40%;
-    height: 75%;
+    height: 50%;
     background-color: red;
     float: left;
     margin: 5%;
@@ -24,7 +24,7 @@ body {
 
 #computer-square {
     width: 40%;
-    height: 75%;
+    height: 50%;
     background-color: red;
     float: right;
     margin: 5%;
