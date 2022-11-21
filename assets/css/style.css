@@ -31,6 +31,13 @@ body {
     margin: 5%;
 }
 
+img {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 25%;
+}
+
 #result-text {
     display: block;
     font-size: 150%;
