@@ -4,7 +4,6 @@
 const buttons = document.getElementsByClassName('control');
 const choices = ["rock", "paper", "scissors"];
 let resultText = document.getElementById("result-text");
-
 let playerChoice;
 let computerChoice;
 
@@ -88,3 +87,10 @@ function computerScore() {
     let oldScore = parseInt(document.getElementById('losses').innerText);
     document.getElementById('losses').innerText = ++oldScore;
 }
+
+/**
+ * Restart button. Resets the values of the player and computers score.
+ */
+document.getElementById('restart').addEventListener('click', function() {
+    location.reload();
+})

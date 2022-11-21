@@ -5,13 +5,14 @@ body {
 }
 
 #game-area {
-    width: 50%;
-    height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: white;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 #player-square {
@@ -36,7 +37,7 @@ body {
 }
 
 #score-area {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
