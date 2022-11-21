@@ -82,3 +82,12 @@ img {
     border-radius: 50%;
     margin: 1rem;
 }
+
+i:hover::before {
+    transform: rotate(360deg);
+  }
+  
+  i:before {
+    display: inline-block;
+    transition: 1s all;
+  }
