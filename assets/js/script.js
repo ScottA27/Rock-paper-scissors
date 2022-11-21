@@ -4,6 +4,8 @@
 const buttons = document.getElementsByClassName('control');
 const choices = ["rock", "paper", "scissors"];
 let resultText = document.getElementById("result-text");
+let playerImage = document.getElementById("player-image")
+let computerImage = document.getElementById("computer-image")
 let playerChoice;
 let computerChoice;
 
@@ -17,6 +19,8 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         playerChoice = +this.getAttribute("data-choice");
         computerRandomGenerator();
+        playerImgDisplay();
+        compImgDisplay();
         checkWinner();
     });
 }
@@ -44,7 +48,7 @@ function checkWinner() {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
-    else if (playerChoice === 2 && computerChoice === 0) {
+    else if (playerChoice === 2 && computerChoice === 1) {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
@@ -65,6 +69,25 @@ function checkWinner() {
     }
 }
 
+function playerImgDisplay() {
+    if (playerChoice == 0) {
+        playerImage.src = 'assets/images/rock-left.webp';
+    } else if (playerChoice == 1) {
+        playerImage.src = 'assets/images/paper-left.webp';
+    } else if (playerChoice ==2) {
+        playerImage.src = 'assets/images/scissors-left_1.webp';
+    }
+}
+
+function compImgDisplay() {
+    if (computerChoice == 0) {
+        computerImage.src = 'assets/images/rock-left.webp';
+    } else if (computerChoice == 1) {
+        computerImage.src = 'assets/images/paper-left.webp';
+    } else if (computerChoice == 2) {
+        computerImage.src = 'assets/images/scissors-left_1.webp';
+    }
+}
 
 /**
  * The playerScore function. If the player wins the 

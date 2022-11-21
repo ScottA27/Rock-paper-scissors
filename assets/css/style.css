@@ -15,7 +15,7 @@ body {
     background-color: white;
 }
 
-#player-square {
+.player-square {
     width: 40%;
     height: 50%;
     background-color: red;
@@ -23,7 +23,7 @@ body {
     margin: 5%;
 }
 
-#computer-square {
+.computer-square {
     width: 40%;
     height: 50%;
     background-color: red;
