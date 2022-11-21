@@ -20,7 +20,6 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         playerChoice = this.getAttribute("data-choice");
         computerRandomGenerator();
-        checkWinner();
     });
 }
 
@@ -30,6 +29,7 @@ for (let button of buttons) {
  */
 function computerRandomGenerator() {
     computerChoice = Math.floor(Math.random() * 3);
+    checkWinner();
 
 }
 
@@ -47,8 +47,8 @@ function checkWinner() {
         resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
-    else if (playerChoice == '2' && computerChoice == '2') {
-        resultText.innerHTML == "YOU WIN!";
+    else if (playerChoice == '2' && computerChoice == '0') {
+        resultText.innerHTML = "YOU WIN!";
         playerScore();
     }
     else if (playerChoice == '0' && computerChoice == '1') {

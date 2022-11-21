@@ -6,15 +6,17 @@ body {
 
 #game-area {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
     background-color: gray;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #player-square {
     width: 40%;
-    height: 80%;
+    height: 75%;
     background-color: red;
     float: left;
     margin: 5%;
@@ -22,7 +24,7 @@ body {
 
 #computer-square {
     width: 40%;
-    height: 80%;
+    height: 75%;
     background-color: red;
     float: right;
     margin: 5%;
@@ -41,10 +43,12 @@ body {
 
 #player-score {
     float: left;
+    font-size: 150%;
 }
 
 #computer-score {
     float: right;
+    font-size: 150%;
 }
 
 .control {
