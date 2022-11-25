@@ -127,15 +127,17 @@ document.getElementById('restart').addEventListener('click', function() {
 
 
 /**
- * Best of 5 if statement. This checks if one of the players have reached 
+ * First to 5 function. This checks if one of the players have reached 
  * 5 wins, if so the game ends.
  */
 function checkScore () {
     if (parseInt(document.getElementById('wins').innerText) === 5) {
+        resultText.innerHTML = 'Congratulations! <br> You are the rock, paper, scissors champion <br> Click the refresh button to play again!'
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
         document.getElementById('scissors').disabled = true;
     } else if (parseInt(document.getElementById('losses').innerText) === 5) {
+        resultText.innerHTML = 'Better luck next time! <br> Click the refresh button to play again!'
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
         document.getElementById('scissors').disabled = true;
