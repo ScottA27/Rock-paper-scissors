@@ -9,21 +9,28 @@ let computerImage = document.getElementById("computer-image")
 let playerChoice;
 let computerChoice;
 
+document.getElementById('rock').disabled = false;
+document.getElementById('paper').disabled = false;
+document.getElementById('scissors').disabled = false;
+
 /**
  * The game area. This adds event listeners to 
  * all buttons. It takes what the user has clicked
  * and the computers randomly generated choice to use as 
  * parameters in order to get a winner.
  */
-for (let button of buttons) {
-    button.addEventListener("click", function () {
-        playerChoice = +this.getAttribute("data-choice");
-        computerRandomGenerator();
-        playerImgDisplay();
-        compImgDisplay();
-        checkWinner();
-    });
-}
+
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            playerChoice = +this.getAttribute("data-choice");
+            computerRandomGenerator();
+            playerImgDisplay();
+            compImgDisplay();
+            checkWinner();
+            checkScore();
+        });
+    }
+
 
 /**
  * The random number generator. This takes a number between 0 and 2 
@@ -117,3 +124,20 @@ function computerScore() {
 document.getElementById('restart').addEventListener('click', function() {
     location.reload();
 })
+
+
+/**
+ * Best of 5 if statement. This checks if one of the players have reached 
+ * 5 wins, if so the game ends.
+ */
+function checkScore () {
+    if (parseInt(document.getElementById('wins').innerText) === 5) {
+        document.getElementById('rock').disabled = true;
+        document.getElementById('paper').disabled = true;
+        document.getElementById('scissors').disabled = true;
+    } else if (parseInt(document.getElementById('losses').innerText) === 5) {
+        document.getElementById('rock').disabled = true;
+        document.getElementById('paper').disabled = true;
+        document.getElementById('scissors').disabled = true;
+    }
+}
