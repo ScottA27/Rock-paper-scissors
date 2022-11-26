@@ -4,14 +4,19 @@
 const buttons = document.getElementsByClassName('control');
 const choices = ["rock", "paper", "scissors"];
 let resultText = document.getElementById("result-text");
-let playerImage = document.getElementById("player-image")
-let computerImage = document.getElementById("computer-image")
+let playerImage = document.getElementById("player-image");
+let computerImage = document.getElementById("computer-image");
+let ruleButton = document.getElementById("rules");
 let playerChoice;
 let computerChoice;
 
 document.getElementById('rock').disabled = false;
 document.getElementById('paper').disabled = false;
 document.getElementById('scissors').disabled = false;
+
+ruleButton.addEventListener("click", function() {
+    alert("The rules are as follows:\n-Rock blunts scissors\n-Scissors cuts paper\n-Paper covers rock\nFirst player to reach five points wins!");
+})
 
 /**
  * The game area. This adds event listeners to 

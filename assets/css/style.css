@@ -2,6 +2,20 @@ body {
     background: url(/assets/images/rock-paper-scissors-seamless-pattern.webp) center center fixed;
     font-family: "Kanit", sans-serif;
     text-align: center;
+    color: white;
+}
+
+#rules-container {
+    position: absolute;
+}
+
+#rules {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
 }
 
 #game-area {
@@ -12,23 +26,23 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: black;
 }
 
 .image-container {
     width: 40%;
     height: 40%;
-    background-color: magenta;
+    background-color: white;
     float: left;
     margin: 5%;
     border-radius: 50%;
 }
 
 img {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     position: relative;
-    top: 25%;
+    top: 20%;
 }
 
 #result-text {
