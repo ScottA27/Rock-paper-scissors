@@ -40,6 +40,14 @@ to see who comes out on top.
 
 ![refresh button]() ![game choice and rules buttons]()
 
+* Score Counter
+
+    * This section contains the counters for both the player and the computer.
+    * If the player wins the round a tally is added to their counter.
+    * If the computer wins the round a tally is added to its counter. 
+    * Once either of the players reach 5 on the counter the game is over.
+
+![score counters]()
 
 ## Testing
 
