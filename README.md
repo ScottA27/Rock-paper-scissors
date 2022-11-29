@@ -19,6 +19,17 @@ to see who comes out on top.
 
 ![heading of the website]()
 
+* Display Images
+
+    * This section initially contains, on the left hand side, an image of the options from which 
+    the player can choose from. Once the player has picked an option the image changes to 
+    whatever the player picked.
+    * The right hand side of this section initially contains an image of the computers options
+    then depending on what the programme generates the image will change to an image of 
+    that option.
+
+![display images]()
+
 ## Testing
 
 ## Deployment 
