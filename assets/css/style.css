@@ -1,5 +1,5 @@
 body {
-    background: url(/assets/images/rock-paper-scissors-seamless-pattern.webp) center center fixed;
+    background: url(../images/rock-paper-scissors-seamless-pattern.webp) center center fixed;
     font-family: "Kanit", sans-serif;
     text-align: center;
     color: white;
@@ -83,17 +83,17 @@ img {
 }
 
 #rock {
-    background: url(/assets/images/rock-left.webp);
+    background: url(../images/rock-left.webp);
     background-size: cover;
 }
 
 #paper {
-    background: url(/assets/images/paper-left.webp);
+    background: url(../images/paper-left.webp);
     background-size: cover;
 }
 
 #scissors {
-    background: url(/assets/images/scissors-left_1.webp);
+    background: url(../images/scissors-left_1.webp);
     background-size: cover;
 }
 

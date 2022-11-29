@@ -47,7 +47,7 @@ to see who comes out on top.
     * If the computer wins the round a tally is added to its counter. 
     * Once either of the players reach 5 on the counter the game is over.
 
-![score counters]()
+![player score counter]() ![computer score counter]()
 
 ## Testing
 
