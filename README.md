@@ -30,6 +30,17 @@ to see who comes out on top.
 
 ![display images]()
 
+* Players Buttons 
+
+    * This section contains the refresh button which will refresh the entire page.
+    * It also contains the buttons which are used to play the game. These buttons are
+    rock, paper and scissors. Each button contains an image of these options.
+    * The final button is rules button. Once clicked this will display the rules of the game to
+    the player.
+
+![refresh button]() ![game choice and rules buttons]()
+
+
 ## Testing
 
 ## Deployment 
