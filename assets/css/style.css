@@ -124,7 +124,6 @@ i:hover::before {
 
 @media screen and (max-width: 1200px) {
     .image-container {
-        width: 30%;
         height: 30%;
     }
 
@@ -133,5 +132,43 @@ i:hover::before {
         left: 0;
         right: 0;
         bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #result-text {
+        font-size: 120%;
+    }
+
+    .image-container {
+        height: 20%;
+        margin: 5% auto;
+    }
+
+    #left-image {
+        float: none;
+        margin-left: auto;
+    }
+
+    #right-image {
+        float: none;
+        margin-right: auto;
+    }
+
+    .player-options {
+        bottom: 2.5%;
+    }
+
+    #score-area {
+        font-size: 90%;
+        position: initial;
+    }
+
+    #rules-container {
+        right: 1%;
+        top: 20%;
+        bottom: auto;
+        left: auto;
     }
 }
