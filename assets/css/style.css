@@ -207,3 +207,17 @@ i:hover::before {
         font-size: 70%;
     }
 }
+
+@media screen and (max-width: 380px) {
+    #game-area {
+        height: 95%;
+    }
+
+    #result-text {
+        font-size: 70%;
+    }
+    
+    #score-area {
+        font-size: 50%;
+    }
+}
