@@ -122,3 +122,16 @@ i:hover::before {
     transition: 1s all;
   }
 
+@media screen and (max-width: 1200px) {
+    .image-container {
+        width: 30%;
+        height: 30%;
+    }
+
+    #score-area {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40%;
+    }
+}
