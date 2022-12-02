@@ -36,9 +36,18 @@ body {
     width: 40%;
     height: 40%;
     background-color: white;
-    float: left;
-    margin: 5%;
+    margin: 5% 0;
     border-radius: 50%;
+}
+
+#left-image {
+    float: left;
+    margin-left: 7.5%;
+}
+
+#right-image {
+    float: right;
+    margin-right: 7.5%;
 }
 
 img {
@@ -112,3 +121,4 @@ i:hover::before {
     display: inline-block;
     transition: 1s all;
   }
+
