@@ -5,21 +5,7 @@ body {
     color: white;
 }
 
-#rules-container {
-    position: absolute;
-    bottom: 10%;
-    right: 0;
-    left: 0;
-}
-
-#rules {
-    background-color: black;
-    color: white;
-    font-size: 150%;
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-}
+/* main game area */
 
 #game-area {
     width: 60%;
@@ -31,6 +17,15 @@ body {
     right: 0;
     background-color: black;
 }
+
+/* result text */
+
+#result-text {
+    display: block;
+    font-size: 150%;
+}
+
+/* display images */
 
 .image-container {
     width: 40%;
@@ -57,26 +52,25 @@ img {
     top: 20%;
 }
 
-#result-text {
-    display: block;
-    font-size: 150%;
+/* rules button*/
+
+#rules-container {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    left: 0;
 }
 
-#score-area {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+#rules {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
 }
 
-#player-score {
-    float: left;
-    font-size: 150%;
-}
-
-#computer-score {
-    float: right;
-    font-size: 150%;
-}
+/* player options */
 
 .player-options {
     position: absolute;
@@ -122,6 +116,25 @@ i:hover::before {
     transition: 1s all;
   }
 
+/* score area */
+
+#score-area {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player-score {
+    float: left;
+    font-size: 150%;
+}
+
+#computer-score {
+    float: right;
+    font-size: 150%;
+}
+
+/* for larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     .image-container {
         height: 30%;
@@ -135,6 +148,7 @@ i:hover::before {
     }
 }
 
+/* for medium screen sizes from 800px wide and down */
 @media screen and (max-width: 800px) {
     #result-text {
         font-size: 120%;
@@ -172,6 +186,7 @@ i:hover::before {
     }
 }
 
+/* for small screen sizes from 450px wide and down */
 @media screen and (max-width: 450px) {
     #game-area {
         width: 80%;
@@ -208,6 +223,7 @@ i:hover::before {
     }
 }
 
+/* for small screen sizes from 380px wide and down */
 @media screen and (max-width: 380px) {
     #game-area {
         height: 100%;

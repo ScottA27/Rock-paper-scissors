@@ -1,7 +1,8 @@
 # Rock, Paper, Scissors 
 
-This Rock, Paper, Scissors game is for people of all ages to enjoy. Challenge yourself against the computer programme 
-to see who comes out on top.
+This Rock, Paper, Scissors game is for people of all ages to enjoy. The page is simple and effective, it is easy
+for both new and old players to get a grip of. The game provides the user with a tough opponent making the replayability endless.
+Challenge yourself against the computer programme, the first player to reach five points wins.
 
 ![website displayed in different screens](/assets/images/AmIResponsive.png)
 
