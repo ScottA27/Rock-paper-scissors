@@ -90,5 +90,12 @@ to display a message when I should have only been using 1.
 
 ## Deployment 
 
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+    * From the projects repository go to the settings tab.
+    * Navigate to the pages tab, from the source drop-down menu choose deploy from a branch.
+    * In the branch section there is another drop-down menu to select a branch, click this and select main.
+    * Click the save button within the branch section and the website is now deployed. A link to the website
+    is given at the top of the page.
+
 ## Credits
 
