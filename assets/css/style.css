@@ -210,7 +210,7 @@ i:hover::before {
 
 @media screen and (max-width: 380px) {
     #game-area {
-        height: 95%;
+        height: 100%;
     }
 
     #result-text {
@@ -218,6 +218,28 @@ i:hover::before {
     }
     
     #score-area {
+        width: 80%;
         font-size: 50%;
     }
+
+    .control {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #restart {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #rules {
+        height: 3rem;
+        width: 3rem;
+        font-size: 100%;
+    }
+
+    #rules-container {
+        top: 30%;
+    }
+
 }
