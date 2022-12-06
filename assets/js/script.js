@@ -70,11 +70,11 @@ function checkWinner() {
         computerScore();
     }
     else if (playerChoice === 1 && computerChoice === 2) {
-        resultText.innerHTML = "YOU LOSE THIS ROUND";
+        resultText.innerHTML = "YOU LOSE THIS ROUND!";
         computerScore();
     }
     else if (playerChoice === 2 && computerChoice === 0) {
-        resultText.innerHTML = "YOU LOSE THIS ROUND";
+        resultText.innerHTML = "YOU LOSE THIS ROUND!";
         computerScore();
     }
     else {
