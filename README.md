@@ -61,6 +61,33 @@ to see who comes out on top.
 * The rules button is always on the on all screen sizes, making the rules easily accessible 
 for new users. 
 
+### Bugs 
+
+#### Solved Bugs
+
+* The initial code for the "checkwinner" function within the javascript didn't work how I had 
+intended. The code would only push certain messages, this was due to me inserting 2 equals signs
+to display a message when I should have only been using 1.
+
+#### Unfixed Bugs 
+
+* No unfixed bugs.
+
+### Validator Testing 
+
+* HTML
+    * There were no errors when checked through the official W3C validator.
+
+* CSS
+    * There were no errors when checked through the official W3C CSS validator (Jigsaw).
+
+* JavaScript
+    * There were no significant erros when checked through JSHint.
+
+* Accessiblility
+    * I ran the website through the lighthouse programme to make sure it is easily readable 
+    with the colours and fonts used.
+
 ## Deployment 
 
 ## Credits
