@@ -137,7 +137,7 @@ document.getElementById('restart').addEventListener('click', function() {
  */
 function checkScore () {
     if (parseInt(document.getElementById('wins').innerText) === 5) {
-        resultText.innerHTML = 'Congratulations! <br> You are the rock, paper, scissors champion <br> Click the refresh button to play again!'
+        resultText.innerHTML = 'Congratulations! You are the rock, paper, scissors champion! <br> Click the refresh button to play again!'
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
         document.getElementById('scissors').disabled = true;
