@@ -4,7 +4,7 @@ This Rock, Paper, Scissors game is for people of all ages to enjoy. The page is 
 for both new and old players to get a grip of. The game provides the user with a tough opponent making the replayability endless.
 Challenge yourself against the computer programme, the first player to reach five points wins.
 
-![website displayed in different screens](/assets/images/AmIResponsive.png)
+![website displayed in different screens](assets/images/AmIResponsive.png)
 
 ## Features
 
@@ -20,7 +20,7 @@ Challenge yourself against the computer programme, the first player to reach fiv
     message displayed will say "Better luck next time!". 
     * In both instances the player is told to click the refresh button if they wish to play again.
 
-![heading of the website](/assets/images/Heading%20Section.png)
+![heading of the website](assets/images/Heading%20Section.png)
 
 * Display Images
 
@@ -30,7 +30,7 @@ Challenge yourself against the computer programme, the first player to reach fiv
     computers options then depending on what the programme generates the image will change to an image of 
     that option.
 
-![display images](/assets/images/InitialOptionsImage.png)
+![display images](assets/images/InitialOptionsImage.png)
 
 * Players Buttons 
 
@@ -40,8 +40,8 @@ Challenge yourself against the computer programme, the first player to reach fiv
     * The final button is the rules button. Once clicked this will display the rules of the game to
     the player.
 
-![game choice and rules buttons](/assets/images/PlayerOptions.png)
-![refresh button](/assets/images/RefreshButton.png)
+![game choice and rules buttons](assets/images/PlayerOptions.png)
+![refresh button](assets/images/RefreshButton.png)
 
 * Score Counter
 
@@ -50,8 +50,8 @@ Challenge yourself against the computer programme, the first player to reach fiv
     * If the computer wins the round a tally is added to its counter. 
     * Once either of the players reach 5 on the counter the game is over.
 
-![player score counter](/assets/images/PlayerScore.png)
-![computer score counter](/assets/images/ComputerScore.png)
+![player score counter](assets/images/PlayerScore.png)
+![computer score counter](assets/images/ComputerScore.png)
 
 ## Testing
 
@@ -90,6 +90,8 @@ to display a message when I should have only been using 1.
 * Accessiblility
     * I ran the website through the lighthouse programme to make sure it is easily readable 
     with the colours and fonts used.
+
+![lighthouse programme](assets/images/RPSLighthouse.png)
 
 ## Deployment 
 

@@ -30,7 +30,7 @@ ruleButton.addEventListener("click", function() {
             playerChoice = +this.getAttribute("data-choice");
             computerRandomGenerator();
             playerImgDisplay();
-            compImgDisplay();
+            computerImgDisplay();
             checkWinner();
             checkScore();
         });
@@ -81,17 +81,25 @@ function checkWinner() {
     }
 }
 
+/**
+ * The playerImgDisplay function. This takes whatever option the
+ * player has picked and displays it in the player image circle
+ */
 function playerImgDisplay() {
     if (playerChoice == 0) {
         playerImage.src = 'assets/images/rock-left.webp';
     } else if (playerChoice == 1) {
         playerImage.src = 'assets/images/paper-left.webp';
-    } else if (playerChoice ==2) {
+    } else if (playerChoice == 2) {
         playerImage.src = 'assets/images/scissors-left_1.webp';
     }
 }
 
-function compImgDisplay() {
+/**
+ * The computerImgDisplay function. This takes the randomly generated
+ * option from the computer and displays it in the computer image circle
+ */
+function computerImgDisplay() {
     if (computerChoice == 0) {
         computerImage.src = 'assets/images/rock-left.webp';
     } else if (computerChoice == 1) {

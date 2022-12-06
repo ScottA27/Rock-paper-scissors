@@ -68,6 +68,7 @@ img {
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
+    cursor: pointer;
 }
 
 /* player options */
@@ -83,6 +84,7 @@ img {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #rock {
@@ -105,16 +107,17 @@ img {
     width: 5rem;
     border-radius: 50%;
     margin: 1rem;
+    cursor: pointer;
 }
 
 i:hover::before {
     transform: rotate(360deg);
-  }
-  
-  i:before {
+}
+
+i:before {
     display: inline-block;
     transition: 1s all;
-  }
+}
 
 /* score area */
 
@@ -232,7 +235,7 @@ i:hover::before {
     #result-text {
         font-size: 75%;
     }
-    
+
     #score-area {
         width: 80%;
         font-size: 50%;
