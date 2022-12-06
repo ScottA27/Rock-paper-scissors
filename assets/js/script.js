@@ -4,6 +4,7 @@
 const buttons = document.getElementsByClassName('control');
 const choices = ["rock", "paper", "scissors"];
 let resultText = document.getElementById("result-text");
+let briefRules = document.getElementById("brief-rules")
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let ruleButton = document.getElementById("rules");
@@ -145,11 +146,13 @@ document.getElementById('restart').addEventListener('click', function() {
  */
 function checkScore () {
     if (parseInt(document.getElementById('wins').innerText) === 5) {
+        briefRules.innerHTML = ''
         resultText.innerHTML = 'Congratulations! You are the rock, paper, scissors champion! <br> Click the refresh button to play again!';
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;
         document.getElementById('scissors').disabled = true;
     } else if (parseInt(document.getElementById('losses').innerText) === 5) {
+        briefRules.innerHTML = ''
         resultText.innerHTML = 'Better luck next time! <br> Click the refresh button to play again!';
         document.getElementById('rock').disabled = true;
         document.getElementById('paper').disabled = true;

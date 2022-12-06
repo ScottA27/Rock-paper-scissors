@@ -20,7 +20,7 @@ body {
 
 /* result text */
 
-#result-text {
+span {
     display: block;
     font-size: 150%;
 }
@@ -153,7 +153,7 @@ i:before {
 
 /* for medium screen sizes from 800px wide and down */
 @media screen and (max-width: 800px) {
-    #result-text {
+    span {
         font-size: 120%;
     }
 
@@ -217,7 +217,7 @@ i:before {
         top: 25%;
     }
 
-    #result-text {
+    span {
         font-size: 100%;
     }
 
@@ -232,7 +232,7 @@ i:before {
         height: 100%;
     }
 
-    #result-text {
+    span {
         font-size: 75%;
     }
 
