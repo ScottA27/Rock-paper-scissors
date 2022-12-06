@@ -12,14 +12,18 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
+<!-- The main game area -->
     <main>
         <section id="game-area">
+<!-- The heading and result text -->
             <div class="heading">
                 <h1>Rock, Paper, Scissors</h1>
             </div>
             <span id="result-text">First player to reach 5 points is the rock, paper, scissors champion!</span>
-            <div class="image-container" id="left-image"><img id="player-image" src="./assets/images/RockPaperScissors.jpeg" alt="Image of the options rock, paper and scissors"></div>
-            <div class="image-container" id="right-image"><img id="computer-image" src="./assets/images/RockPaperScissors.jpeg" alt="Image of the options rock, paper and scissors"></div>
+<!-- The display images -->
+            <div class="image-container" id="left-image"><img id="player-image" src="./assets/images/RockPaperScissors.webp" alt="Image of the options rock, paper and scissors"></div>
+            <div class="image-container" id="right-image"><img id="computer-image" src="./assets/images/RockPaperScissors.webp" alt="Image of the options rock, paper and scissors"></div>
+<!-- The player options -->
             <div class="player-options">
                 <button id="restart" aria-label="restart game">
                     <i class="fa-solid fa-arrows-rotate fa-3x"></i>
@@ -33,12 +37,14 @@
                     </button>
                 </div> 
             </div>
+<!-- The score area-->
             <div id="score-area">
                 <h2 id="player-score">Player: <span class="result" id="wins">0</span></h2>
                 <h2 id="computer-score">Computer: <span class="result" id="losses">0</span></h2>
             </div>
+<!-- The rules button-->
             <div id="rules-container">
-                <button id="rules" >Rules</button> 
+                <button id="rules">Rules</button> 
             </div>
         </section>
     </main>

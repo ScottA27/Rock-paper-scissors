@@ -10,23 +10,23 @@ to see who comes out on top.
 * Heading 
 
     * The heading area contains the title of the page, Rock, Paper, Scissors. 
-    * This section also contains text to let the player know the game is first player to 
+    * This section also contains text to let the player know the game is the first player to 
     reach 5 points wins.
     * The text in this area changes after picking an option, depending on the outcome
-    of the game depends on which text is displayed.
+    of the game the text displayed will change.
     * Once someone reaches 5 points the game is over and the message changes for a final time,
-    if the player has won they are congratulated, if they have lost they will receive a better 
-    luck next time.
+    if the player has won the message displayed will congratulate them. If the player has lost the 
+    message displayed will say "Better luck next time!". 
+    * In both instances the player is told to click the refresh button if they wish to play again.
 
 ![heading of the website]()
 
 * Display Images
 
-    * This section initially contains, on the left hand side, an image of the options from which 
-    the player can choose from. Once the player has picked an option the image changes to 
-    whatever the player picked.
-    * The right hand side of this section initially contains an image of the computers options
-    then depending on what the programme generates the image will change to an image of 
+    * The left hand side (the top image if on mobile) of this section initially contains an image of
+    the players options. Once the player has picked an option the image changes to whatever the player picked.
+    * The right hand side (the bottom image if on mobile) of this section initially contains an image of the
+    computers options then depending on what the programme generates the image will change to an image of 
     that option.
 
 ![display images]()
@@ -36,7 +36,7 @@ to see who comes out on top.
     * This section contains the refresh button which will refresh the entire page.
     * It also contains the buttons which are used to play the game. These buttons are
     rock, paper and scissors. Each button contains an image of these options.
-    * The final button is rules button. Once clicked this will display the rules of the game to
+    * The final button is the rules button. Once clicked this will display the rules of the game to
     the player.
 
 ![refresh button]() ![game choice and rules buttons]()
@@ -99,3 +99,13 @@ to display a message when I should have only been using 1.
 
 ## Credits
 
+### Content
+
+* The JavaScript code for both the "playerScore" and "computerScore" functions were inspired by the 
+the Code Insitute's Love Maths increment score function.
+
+### Media
+
+* The background image used is taken from Vecteezy.
+* The image of all three options, rock, paper and scissors, is taken from iStock.
+* The seperate images of the options, rock, paper and scissors, are all taken from The Boston Globe.
