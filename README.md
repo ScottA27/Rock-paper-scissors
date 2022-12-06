@@ -3,7 +3,7 @@
 This Rock, Paper, Scissors game is for people of all ages to enjoy. Challenge yourself against the computer programme 
 to see who comes out on top.
 
-![website displayed in different screens]()
+![website displayed in different screens](/assets/images/AmIResponsive.png)
 
 ## Features
 
@@ -19,7 +19,7 @@ to see who comes out on top.
     message displayed will say "Better luck next time!". 
     * In both instances the player is told to click the refresh button if they wish to play again.
 
-![heading of the website]()
+![heading of the website](/assets/images/Heading%20Section.png)
 
 * Display Images
 
@@ -29,7 +29,7 @@ to see who comes out on top.
     computers options then depending on what the programme generates the image will change to an image of 
     that option.
 
-![display images]()
+![display images](/assets/images/InitialOptionsImage.png)
 
 * Players Buttons 
 
@@ -39,7 +39,8 @@ to see who comes out on top.
     * The final button is the rules button. Once clicked this will display the rules of the game to
     the player.
 
-![refresh button]() ![game choice and rules buttons]()
+![game choice and rules buttons](/assets/images/PlayerOptions.png)
+![refresh button](/assets/images/RefreshButton.png)
 
 * Score Counter
 
@@ -48,7 +49,8 @@ to see who comes out on top.
     * If the computer wins the round a tally is added to its counter. 
     * Once either of the players reach 5 on the counter the game is over.
 
-![player score counter]() ![computer score counter]()
+![player score counter](/assets/images/PlayerScore.png)
+![computer score counter](/assets/images/ComputerScore.png)
 
 ## Testing
 
