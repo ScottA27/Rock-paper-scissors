@@ -54,31 +54,31 @@ function computerRandomGenerator() {
  */
 function checkWinner() {
     if (playerChoice === 0 && computerChoice === 2) {
-        resultText.innerHTML = "YOU WIN!";
+        resultText.innerHTML = "YOU WIN THIS ROUND!";
         playerScore();
     }
     else if (playerChoice === 1 && computerChoice === 0) {
-        resultText.innerHTML = "YOU WIN!";
+        resultText.innerHTML = "YOU WIN THIS ROUND!";
         playerScore();
     }
     else if (playerChoice === 2 && computerChoice === 1) {
-        resultText.innerHTML = "YOU WIN!";
+        resultText.innerHTML = "YOU WIN THIS ROUND!";
         playerScore();
     }
     else if (playerChoice === 0 && computerChoice === 1) {
-        resultText.innerHTML = "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE THIS ROUND!";
         computerScore();
     }
     else if (playerChoice === 1 && computerChoice === 2) {
-        resultText.innerHTML = "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE THIS ROUND";
         computerScore();
     }
     else if (playerChoice === 2 && computerChoice === 0) {
-        resultText.innerHTML = "YOU LOSE!";
+        resultText.innerHTML = "YOU LOSE THIS ROUND";
         computerScore();
     }
     else {
-        resultText.innerHTML = "IT'S A TIE!";
+        resultText.innerHTML = "IT'S A DRAW!";
     }
 }
 
